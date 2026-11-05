@@ -16,6 +16,8 @@
   "build": {
     "appId": "local.helmetheroes.desktop",
     "productName": "Helmet Heroes Desktop",
+    "directories": {
+    "app": "." },
     "files": ["main.js", "package.json"],
     "win": { "target": [{ "target": "portable", "arch": ["x64"] }] }
   }
