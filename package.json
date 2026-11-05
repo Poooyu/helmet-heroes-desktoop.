@@ -1,0 +1,22 @@
+{
+  "name": "helmet-heroes-desktop",
+  "version": "1.0.0",
+  "description": "Online desktop launcher for Helmet Heroes",
+  "main": "main.js",
+  "author": "Local User",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win portable --x64"
+  },
+  "devDependencies": {
+    "electron": "^37.0.0",
+    "electron-builder": "^26.0.0"
+  },
+  "build": {
+    "appId": "local.helmetheroes.desktop",
+    "productName": "Helmet Heroes Desktop",
+    "files": ["main.js", "package.json"],
+    "win": { "target": [{ "target": "portable", "arch": ["x64"] }] }
+  }
+}
