@@ -1,12 +1,12 @@
 
 name: Build Helmet Heroes Windows EXE
 
-on:
-  workflow_dispatch:
+on: [workflow_dispatch, push]
 
 jobs:
   build:
     runs-on: windows-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -27,4 +27,3 @@ jobs:
         with:
           name: Helmet-Heroes-Windows
           path: dist/*.exe
-
